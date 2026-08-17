@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Registration Form</title>
+</head>
+<body>
+<h1>Course Registration Form</h1>
+
+<form>
+
+<fieldset>
+<legend>Personal Details</legend>
+
+<label>First Name</label><br>
+<input type="text" name="firstname" placeholder="Ex:VENU MADAHAV" required><br><br>
+
+<label>Surname</label><br>
+<input type="text" name="surname" placeholder="Ex:IMANDAI" required><br><br>
+
+<label>Mobile Number</label><br>
+<input type="tel" name="mobile" placeholder="903-296-8649" maxlength="10" required><br><br>
+
+<label>Email</label><br>
+<input type="email" name="email" placeholder="Ex:venu05277@gmail.com" required><br><br>
+
+<label>Password</label><br>
+<input type="password" name="password" placeholder="min 5 characters" minlength="5" required><br><br>
+
+<label>Confirm Password</label><br>
+<input type="password" name="confirmpassword" placeholder="min 5 characters" required><br><br>
+
+<label>Date of Birth</label><br>
+<input type="date" name="dob" required><br><br><br>
+
+<label>Gender</label><br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Custom"> Custom
+<br><br>
+
+<label>Select Country</label><br>
+<select name="country">
+    <option value="Canada">CANADA</option>
+    <option value="India">INDIA</option>
+    <option value="USA">USA</option>
+    <option value="UK">UK</option>
+    <option value="Australia">AUSTRALIA</option>
+</select>
+<br><br>
+
+<input type="reset" value="Reset">
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Course Details</legend>
+
+<label>Select Course</label><br>
+<select name="course">
+    <option value="Python Full Stack">Python Full Stack</option>
+    <option value="Java Full Stack">Java Full Stack</option>
+    <option value="Data Science">Data Science</option>
+    <option value="Web Development">Web Development</option>
+</select>
+<br><br>
+
+<label>Delivery Mode</label><br>
+<input type="checkbox" name="mode" value="ONLINE"> ONLINE
+<input type="checkbox" name="mode" value="OFFLINE"> OFFLINE
+<br><br>
+
+<label>Comments</label><br>
+<textarea name="comments" rows="6" cols="40"></textarea>
+<br><br>
+
+<input type="submit" value="Register">
+<input type="reset" value="Clear">
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
